@@ -27,15 +27,20 @@
 # limitations under the License.
 
 """Project pipelines."""
-from typing import Dict
+from typing import Dict, TYPE_CHECKING
+from pathlib import Path
 
-from kedro.pipeline import Pipeline
+if TYPE_CHECKING:
+    from kedro.pipeline import Pipeline
+
+from find_kedro import find_kedro
 
 
-def register_pipelines() -> Dict[str, Pipeline]:
+def register_pipelines() -> Dict[str, "Pipeline"]:
     """Register the project's pipelines.
 
     Returns:
         A mapping from a pipeline name to a ``Pipeline`` object.
     """
-    return {"__default__": Pipeline([])}
+    pipelines = find_kedro(directory=Path(__file__).parent / "pipelines")
+    return pipelines
