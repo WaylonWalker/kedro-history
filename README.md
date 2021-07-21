@@ -24,6 +24,10 @@ $ kedro diff b49071b  2385c4
 
 ```
 
+screenshot to show color
+
+![Screenshot from 2021-07-21 09-19-20](https://user-images.githubusercontent.com/22648375/126504372-915e0e97-bdb5-4b4a-9588-e30086ae19a8.png)
+
 ``` bash
 $ kedro diff b49071b
 
@@ -160,3 +164,8 @@ $  kedro diff main..delete_squared
     outputs:   ['range_two_squared']
     tags:      []
 ```
+
+screenshot to show color and font.
+
+![Screenshot from 2021-07-21 09-17-26](https://user-images.githubusercontent.com/22648375/126504072-214b6701-739b-4887-b0b9-3dc683dc4a2c.png)
+
