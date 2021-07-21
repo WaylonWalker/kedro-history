@@ -2,6 +2,8 @@
 
 The intent of this repo is to seve as a playground for `kedro-diff`.
 
+check it out [kedro-diff](https://github.com/WaylonWalker/kedro-diff)
+
 ``` bash
 $ kedro diff b49071b  2385c4
 
