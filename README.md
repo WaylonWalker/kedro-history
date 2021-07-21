@@ -128,3 +128,35 @@ $ kedro diff range_squared
 
 ```
 
+## deleted nodes
+
+
+``` bash
+$  kedro diff main..delete_squared
+╭─────────────────────────────────────────────────────────────────────────────────────── kedro-diff ─╮
+│ modified: __default__                                                                              │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────╯
+- <lambda>() ->
+    name:      <lambda>() ->
+    inputs:    ['range']
+    outputs:   ['range_squared']
+    tags:      []
+- <lambda>() ->
+    name:      <lambda>() ->
+    inputs:    ['range_two']
+    outputs:   ['range_two_squared']
+    tags:      []
+╭─────────────────────────────────────────────────────────────────────────────────────── kedro-diff ─╮
+│ modified: history_nodes                                                                            │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────╯
+- <lambda>() ->
+    name:      <lambda>() ->
+    inputs:    ['range']
+    outputs:   ['range_squared']
+    tags:      []
+- <lambda>() ->
+    name:      <lambda>() ->
+    inputs:    ['range_two']
+    outputs:   ['range_two_squared']
+    tags:      []
+```
